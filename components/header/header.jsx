@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
 	const pathname = usePathname();
-	console.log(pathname);
 	return (
 		<header className={styles.header}>
 			<ul>
@@ -23,6 +22,11 @@ export default function Header() {
 				<li>
 					<Link href='/gallery' className={pathname === '/gallery' ? styles.on : ''}>
 						Gallery
+					</Link>
+				</li>
+				<li>
+					<Link href='/post' className={pathname === '/post' ? styles.on : ''}>
+						Post
 					</Link>
 				</li>
 			</ul>

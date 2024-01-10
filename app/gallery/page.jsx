@@ -4,7 +4,13 @@ import styles from './gallery.module.scss';
 export default function Gallery() {
 	return (
 		<main className={styles.gallery}>
-			<h1>gallery 페이지</h1>
+			<h1>gallery list</h1>
 		</main>
 	);
 }
+export const generateMetadata = () => {
+	return {
+		title: 'Gallery Page',
+		description: 'Infomation of ABC Company including President, crew info',
+	};
+};

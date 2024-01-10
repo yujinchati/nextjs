@@ -11,3 +11,8 @@ li {
 a {
 	text-decoration: none;
 }
+h1 {
+	font-family: var(--font-roboto);
+}
+
+//일반 구글 cdn에서 가져온 폰트는 최적화가 되어있지 않으므로 네트워크 탭에서 확인해보면 똑같은 폰트임에도 불구하고 next가 자체적으로 최적화 시켜서 가져온 폰트보다 40%파일 용량이 더 큼
